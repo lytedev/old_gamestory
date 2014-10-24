@@ -1,0 +1,16 @@
+# Laravel 5 standard .gitignore
+/bootstrap/compiled.php
+/vendor
+/node_modules
+composer.phar
+composer.lock
+.env.*.php
+.env.php
+.DS_Store
+Thumbs.db
+
+# Ignore personally necessary development files. This might include scripts
+# built purely for your configuration. Maybe your VM provisions? Per-project
+# editor configs? Whatever it is, it goes in here. Please don't commit that
+# stuff!
+/docs/dev/personal
