@@ -8,6 +8,7 @@ composer.lock
 .env.php
 .DS_Store
 Thumbs.db
+/bower_components/*
 
 # Ignore personally necessary development files. This might include scripts
 # built purely for your configuration. Maybe your VM provisions? Per-project
