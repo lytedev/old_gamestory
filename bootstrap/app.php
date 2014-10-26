@@ -36,6 +36,8 @@ $app->bind(
 	'App\Console\Kernel'
 );
 
+require app_path().'/helpers.php';
+
 /*
 |--------------------------------------------------------------------------
 | Return The Application
