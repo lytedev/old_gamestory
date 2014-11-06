@@ -26,17 +26,22 @@ $app = new Illuminate\Foundation\Application(
 |
 */
 
-$app->bind(
+require app_path().'/helpers.php';
+
+$app->singleton(
 	'Illuminate\Contracts\Http\Kernel',
 	'App\Http\Kernel'
 );
 
-$app->bind(
+$app->singleton(
 	'Illuminate\Contracts\Console\Kernel',
 	'App\Console\Kernel'
 );
 
-require app_path().'/helpers.php';
+$app->singleton(
+	'Illuminate\Contracts\Debug\ExceptionHandler',
+	'Illuminate\Foundation\Debug\ExceptionHandler'
+);
 
 /*
 |--------------------------------------------------------------------------

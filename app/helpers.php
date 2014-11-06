@@ -11,11 +11,11 @@ function customElixir($file)
 
     if (isset($manifest[$file]))
     {
-        if (App::environment('production')) 
+        if (App::environment('production'))
         {
             return asset('build/'.$manifest[$file]);
         }
-        else 
+        else
         {
             return asset($file);
         }
@@ -23,5 +23,3 @@ function customElixir($file)
 
     throw new InvalidArgumentException("File {$file} not defined in asset manifest.");
 }
-
-?>

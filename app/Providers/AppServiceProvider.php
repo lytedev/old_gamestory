@@ -1,27 +1,27 @@
 <?php namespace App\Providers;
 
-use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class EventServiceProvider extends ServiceProvider {
+class AppServiceProvider extends ServiceProvider {
 
-    /**
-     * The classes to scan for event annotations.
-     *
-     * @var array
-     */
-    protected $scan = [
-        //
-    ];
+	/**
+	 * Bootstrap any application services.
+	 *
+	 * @return void
+	 */
+	public function boot()
+	{
+		//
+	}
 
-    /**
-     * The event handler mappings for the application.
-     *
-     * @var array
-     */
-    protected $listen = [
-        'event.name' => [
-            'EventListener',
-        ],
-    ];
+	/**
+	 * Register any application services.
+	 *
+	 * @return void
+	 */
+	public function register()
+	{
+		//
+	}
 
 }
