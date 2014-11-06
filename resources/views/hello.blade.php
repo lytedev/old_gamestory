@@ -50,7 +50,7 @@
 		<p>
 			<a href="https://playgamestory.com">PlayGameStory.com</a> is a web project that is designed to allow users
 			to create, organize, manage, and play
-			<a href="">storytelling games</a>.
+			<a href="http://en.wikipedia.org/wiki/Storytelling_game" target="_blank">storytelling games</a>.
 		</p>
 		<p>
 			You can follow development
