@@ -4,17 +4,21 @@
 	<meta charset="UTF-8">
 	<title>Coming Soon</title>
 	<style>
-		@import url(//fonts.googleapis.com/css?family=Lato:700);
+		@import url(//fonts.googleapis.com/css?family=Ubuntu:300,400,700);
+
+		h1 {
+			font-weight: 300;
+		}
 
 		body {
 			margin:0;
-			font-family:'Lato', sans-serif;
+			font-family:'Ubuntu', sans-serif;
 			text-align:center;
-			color: #999;
+			color: #666;
 		}
 
 		.welcome {
-			width: 300px;
+			width: 320px;
 			height: 200px;
 			position: absolute;
 			left: 50%;
@@ -24,7 +28,13 @@
 		}
 
 		a, a:visited {
+			color: #07c;
 			text-decoration:none;
+		}
+
+		a:hover {
+			color: #666;
+			text-decoration: underline;
 		}
 
 		h1 {
@@ -36,7 +46,16 @@
 </head>
 <body>
 	<div class="welcome">
-		<h1>You have arrived.</h1>
+		<h1>What is this?</h1>
+		<p>
+			<a href="https://playgamestory.com">PlayGameStory.com</a> is a web project that is designed to allow users
+			to create, organize, manage, and play
+			<a href="">storytelling games</a>.
+		</p>
+		<p>
+			You can follow development
+			<a href="https://github.com/lytedev/gamestory">on github</a>.
+		</p>
 	</div>
 </body>
 </html>

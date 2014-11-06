@@ -31,7 +31,7 @@ gulp.task('elixir', function() {
 
 });
 
-/* 
+/*
  |----------------------------------------------------------------
  | Build lytedev
  |----------------------------------------------------------------
@@ -78,7 +78,7 @@ gulp.task('build', ['build-styles'], function() {
     var buildDir = 'public/build';
     var cssBuildDir = config.cssOutput + "/*.css"
     var jsBuildDir = config.jsOutput + "/*.js"
-    
+
     del(buildDir, { force: true }, function() {
         gulp.src([cssBuildDir, jsBuildDir], { base: "./public" })
             .pipe(gulp.dest(buildDir))
@@ -99,13 +99,13 @@ gulp.task('watch', ['default'], function() {
 
     livereload.listen();
 
-    watch('./resources/views/**', function() {
-        livereload.changed(); 
+    watch('./resources/views/**/*.php', function() {
+        livereload.changed();
     });
 
-    watch(config.assetsDir + "sass/*.scss", function() { 
-        gulp.start('build-styles'); 
-        livereload.changed(); 
+    watch(config.assetsDir + "sass/*.scss", function() {
+        gulp.start('build-styles');
+        livereload.changed();
     });
 
 });
