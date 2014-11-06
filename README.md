@@ -1,6 +1,6 @@
 # Gamestory
 
-Gamestory is a web project that is designed to allow users to create, organize, manage, and play "[storytelling games][storytelling_game_wiki]".
+Gamestory is a web project that is designed to allow users to create, organize, manage, and play [storytelling games][storytelling_game_wiki].
 
 ## Status
 

@@ -37,6 +37,7 @@
 <body>
 	<div class="welcome">
 		<h1>You have arrived.</h1>
+		{{ var_dump($_ENV) }}
 	</div>
 </body>
 </html>
