@@ -43,6 +43,7 @@
 		}
 	</style>
     <link rel="stylesheet" href="{{ customElixir('css/all.css') }}">
+    <!-- Stuff -->
 </head>
 <body>
 	<div class="welcome">

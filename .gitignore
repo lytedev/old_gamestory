@@ -18,3 +18,10 @@ Thumbs.db
 
 # Ignore bower components
 /bower_components/*
+
+# Ignore task-runner compiled files
+public/build/*
+public/css/*
+
+# Generic editor ignores
+*.sublime-workspace
