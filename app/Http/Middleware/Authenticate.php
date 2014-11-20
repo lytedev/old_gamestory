@@ -2,10 +2,9 @@
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;
-use Illuminate\Http\RedirectResponse;
 use Illuminate\Contracts\Routing\Middleware;
 
-class IsGuest implements Middleware {
+class Authenticate implements Middleware {
 
 	/**
 	 * The Guard implementation.
@@ -34,9 +33,16 @@ class IsGuest implements Middleware {
 	 */
 	public function handle($request, Closure $next)
 	{
-		if ($this->auth->check())
+		if ($this->auth->guest())
 		{
-			return new RedirectResponse(url('/'));
+			if ($request->ajax())
+			{
+				return response('Unauthorized.', 401);
+			}
+			else
+			{
+				return redirect()->guest('auth/login');
+			}
 		}
 
 		return $next($request);
